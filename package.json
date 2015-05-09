@@ -1,0 +1,27 @@
+{
+  "name": "nativescript-insomnia",
+  "version": "1.0.0",
+  "description": "Make the screen not dim (and eventually lock the device) while Insomnia is active",
+  "main": "insomnia.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eddyverbruggen/nativescript-insomnia.git"
+  },
+  "keywords": [
+    "NativeScript"
+  ],
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com",
+    "url": "http://x-services.nl/"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/eddyverbruggen/nativescript-insomnia/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/eddyverbruggen/nativescript-insomnia/issues"
+  },
+  "homepage": "https://github.com/eddyverbruggen/nativescript-insomnia",
+  "readmeFilename": "README.md"
+}
