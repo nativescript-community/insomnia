@@ -1,21 +1,25 @@
 # NativeScript Insomnia
 
-Make the screen not dim (and eventually lock the device) while Insomnia is active.
+A plugin to make the screen not dim (and eventually lock the device).
 
 ## Installation
-From the command prompt go to your app's `app` folder and execute:
+Run the following command from the root of your project:
 
 ```
-npm install nativescript-insomnia
+tns plugin add nativescript-insomnia
 ```
 
 ## Usage
 
+To use this plugin you must first require() it:
+
+```js
+var insomnia = require("nativescript-insomnia");
+```
+
 ### keepAwake
 
 ```js
-  var insomnia = require( "./node_modules/nativescript-insomnia/insomnia" );
-
   insomnia.keepAwake().then(function() {
       console.log("Insomnia is active");
   })
@@ -24,8 +28,6 @@ npm install nativescript-insomnia
 ### allowSleepAgain
 
 ```js
-  var insomnia = require( "./node_modules/nativescript-insomnia/insomnia" );
-
   insomnia.allowSleepAgain().then(function() {
       console.log("Insomnia is inactive, good night!");
   })
