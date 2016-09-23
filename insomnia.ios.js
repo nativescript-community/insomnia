@@ -1,7 +1,9 @@
+var utils = require("utils/utils");
+
 exports.keepAwake = function () {
   return new Promise(function (resolve, reject) {
     try {
-      var app = UIApplication.sharedApplication();
+      var app = utils.ios.getter(UIApplication, UIApplication.sharedApplication);
       if (!app.idleTimerDisabled) {
         app.idleTimerDisabled = true;
       }
@@ -16,7 +18,7 @@ exports.keepAwake = function () {
 exports.allowSleepAgain = function () {
   return new Promise(function (resolve, reject) {
     try {
-      var app = UIApplication.sharedApplication();
+      var app = utils.ios.getter(UIApplication, UIApplication.sharedApplication);
       if (app.idleTimerDisabled) {
         app.idleTimerDisabled = false;
       }
