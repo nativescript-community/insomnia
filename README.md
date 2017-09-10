@@ -1,8 +1,6 @@
 # NativeScript Insomnia
 
-A plugin to make the screen not dim (and eventually lock the device).
-
-> Note that version 1.2.0+ requires NativeScript 2.3.0+
+> A plugin to make the screen not dim (and eventually lock the device).
 
 ## Installation
 Run the following command from the root of your project:
