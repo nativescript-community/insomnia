@@ -1,6 +1,7 @@
 # NativeScript Insomnia
 
-> A plugin to make the screen not dim (and eventually lock the device).
+## Demo app (Angular)
+This plugin is part of the [plugin showcase app](https://github.com/EddyVerbruggen/nativescript-pluginshowcase/tree/master/app/ar) I built using Angular.
 
 ## Installation
 Run the following command from the root of your project:
