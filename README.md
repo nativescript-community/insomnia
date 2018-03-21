@@ -14,8 +14,16 @@ tns plugin add nativescript-insomnia
 
 To use this plugin you must first require() it:
 
+### JavaScript
 ```js
 var insomnia = require("nativescript-insomnia");
+```
+
+### TypeScript
+You could do the same as in JS, but this looks fancier, right?
+
+```typescript
+const { keepAwake, allowSleepAgain } = require("nativescript-insomnia");
 ```
 
 ### keepAwake
