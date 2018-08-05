@@ -14,12 +14,12 @@ tns plugin add nativescript-insomnia
 
 To use this plugin you must first require() it:
 
-### JavaScript
+#### JavaScript
 ```js
 var insomnia = require("nativescript-insomnia");
 ```
 
-### TypeScript
+#### TypeScript
 You could do the same as in JS, but this looks fancier, right?
 
 ```typescript
