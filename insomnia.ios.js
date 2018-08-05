@@ -1,4 +1,4 @@
-var utils = require("utils/utils");
+var utils = require("tns-core-modules/utils/utils");
 
 exports.keepAwake = function () {
   return new Promise(function (resolve, reject) {
