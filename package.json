@@ -3,6 +3,7 @@
   "version": "1.2.1",
   "description": "Make the screen not dim (and eventually lock the device) while Insomnia is active",
   "main": "insomnia",
+  "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
       "ios": "2.3.0",
