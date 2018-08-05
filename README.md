@@ -23,13 +23,6 @@ var insomnia = require("nativescript-insomnia");
 You could do the same as in JS, but this looks fancier, right?
 
 ```typescript
-const { keepAwake, allowSleepAgain } = require("nativescript-insomnia");
-```
-
-### Angular
-You could do the same as in JS, but this looks fancier, right?
-
-```typescript
 import { keepAwake, allowSleepAgain } from "nativescript-insomnia";
 ```
 
