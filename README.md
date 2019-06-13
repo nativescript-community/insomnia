@@ -1,5 +1,15 @@
 # NativeScript Insomnia
 
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][npm-url]
+[![Twitter Follow][twitter-image]][twitter-url]
+
+[npm-image]:http://img.shields.io/npm/v/nativescript-insomnia.svg
+[npm-url]:https://npmjs.org/package/nativescript-insomnia
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-insomnia.svg
+[twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
+[twitter-url]:https://twitter.com/eddyverbruggen
+
 ## Demo app (Angular)
 This plugin is part of the [plugin showcase app](https://github.com/EddyVerbruggen/nativescript-pluginshowcase/tree/master/app/ar) I built using Angular.
 

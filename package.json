@@ -1,6 +1,6 @@
 {
   "name": "nativescript-insomnia",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Make the screen not dim (and eventually lock the device) while Insomnia is active",
   "main": "insomnia",
   "typings": "index.d.ts",
@@ -25,5 +25,9 @@
   "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
   "license": "MIT",
   "bugs": "https://github.com/eddyverbruggen/nativescript-insomnia/issues",
-  "homepage": "https://github.com/eddyverbruggen/nativescript-insomnia"
+  "homepage": "https://github.com/eddyverbruggen/nativescript-insomnia",
+  "devDependencies": {
+    "tns-core-modules": "~5.4.2",
+    "tns-platform-declarations": "~5.4.2"
+  }
 }
