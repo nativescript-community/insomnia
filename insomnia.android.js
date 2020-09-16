@@ -1,21 +1,19 @@
-var app = require("@nativescript/core/application");
+var core = require("@nativescript/core");
 
 exports.keepAwake = function () {
   var keepScreenOn = function () {
-    var activity = app.android.foregroundActivity || app.android.startActivity;
+    var activity = core.Application.android.foregroundActivity || core.Application.android.startActivity;
     var window = activity.getWindow();
-    window.addFlags(
-      android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
-    );
+    window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
   };
 
   return new Promise(function (resolve, reject) {
     try {
-      if (app.android.foregroundActivity || app.android.startActivity) {
+      if (core.Application.android.foregroundActivity || core.Application.android.startActivity) {
         keepScreenOn();
         resolve();
       } else {
-        app.android.on("activityStarted", function (args) {
+        core.Application.android.on("activityStarted", function (args) {
           keepScreenOn();
           resolve();
         });
@@ -30,8 +28,7 @@ exports.keepAwake = function () {
 exports.allowSleepAgain = function () {
   return new Promise(function (resolve, reject) {
     try {
-      var activity =
-        app.android.foregroundActivity || app.android.startActivity;
+      var activity = core.Application.android.foregroundActivity || core.Application.android.startActivity;
       var window = activity.getWindow();
       window.clearFlags(
         android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
