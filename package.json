@@ -27,7 +27,7 @@
   "bugs": "https://github.com/eddyverbruggen/nativescript-insomnia/issues",
   "homepage": "https://github.com/eddyverbruggen/nativescript-insomnia",
   "devDependencies": {
-    "tns-core-modules": "~5.4.2",
-    "tns-platform-declarations": "~5.4.2"
+    "@nativescript/core": "~7.0.3",
+    "@nativescript/types": "~7.0.3"
   }
 }
