@@ -1,33 +1,51 @@
 {
-  "name": "nativescript-insomnia",
-  "version": "2.0.0",
-  "description": "Make the screen not dim (and eventually lock the device) while Insomnia is active",
-  "main": "insomnia",
-  "typings": "index.d.ts",
-  "nativescript": {
-    "platforms": {
-      "ios": "7.0.0",
-      "android": "7.0.0"
+    "name": "@nativescript-community/insomnia",
+    "version": "1.0.0",
+    "scripts": {
+        "setup": "ts-patch install",
+        "prepare": "npm run setup",
+        "tsc": "cp src/index.d.ts plugin && tsc -skipLibCheck -d",
+        "build": "cp README.md plugin && rm -f .tsbuildinfo && npm run tsc",
+        "publish": "npm run setup && npm run build && lerna publish --create-release=github",
+        "clean": "rimraf plugin/ios plugin/android plugin/**/*.d.ts plugin/**/*.js plugin/**/*.js.map plugin/node_modules plugin/package-lock.json",
+        "plugin.watch.tsc": "npm run tsc -- -w",
+        "plugin.watch.android": "npm i && npm-watch build.android",
+        "plugin.watch.ios": "npm i && npm-watch build.ios",
+        "plugin.watch": "npm run plugin.watch.tsc & npm run plugin.watch.android & npm run plugin.watch.ios"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@nativescript/core": "7.1.0",
+        "@nativescript/types-android": "7.1.0",
+        "@nativescript/types-ios": "7.1.0",
+        "@nativescript/webpack": "~4.0.0",
+        "@types/node": "^10.12.21",
+        "@typescript-eslint/eslint-plugin": "4.12.0",
+        "@typescript-eslint/parser": "4.12.0",
+        "eslint": "7.17.0",
+        "eslint-config-prettier": "^7.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "husky": "^4.3.6",
+        "lerna": "^3.22.1",
+        "npm-watch": "^0.7.0",
+        "prettier": "^2.2.1",
+        "prompt": "^1.1.0",
+        "rimraf": "^3.0.2",
+        "ts-patch": "1.3.1",
+        "typescript": "~3.9.7"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nativescript-community/insomnia.git"
+    },
+    "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nativescript-community/insomnia/issues"
+    },
+    "homepage": "https://github.com/nativescript-community/insomnia#readme",
+    "dependencies": {
+        "ts-node": "^9.1.1"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eddyverbruggen/nativescript-insomnia.git"
-  },
-  "keywords": [
-    "NativeScript",
-    "Insomnia",
-    "Screen dim",
-    "dim",
-    "lock",
-    "sleep"
-  ],
-  "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
-  "license": "MIT",
-  "bugs": "https://github.com/eddyverbruggen/nativescript-insomnia/issues",
-  "homepage": "https://github.com/eddyverbruggen/nativescript-insomnia",
-  "devDependencies": {
-    "@nativescript/core": "~7.0.3",
-    "@nativescript/types": "~7.0.3"
-  }
 }
