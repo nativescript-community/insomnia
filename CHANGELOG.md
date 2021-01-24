@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/nativescript-community/insomnia/compare/v2.0.1...v2.0.2) (2021-01-24)
+
+
+### Bug Fixes
+
+* typings fix ([abbebfb](https://github.com/nativescript-community/insomnia/commit/abbebfb229e32354de1f52b4af932dfb1952f5ee))
+
+
+
+
+
 ## 2.0.1 (2021-01-05)
 
 

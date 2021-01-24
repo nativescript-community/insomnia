@@ -1,6 +1,6 @@
 {
     "name": "@nativescript-community/insomnia",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Make the screen not dim (and eventually lock the device) while Insomnia is active.",
     "main": "./insomnia",
     "sideEffects": false,
